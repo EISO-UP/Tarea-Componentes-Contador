@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
+export const ShowCounter = ({number}) => {
+  return (
+    <p>{number}</p>
+  )
+}
 
-export const ShowCounter = () => {
-    
-    return (
-        updateDisplay(++counterVal)
-    )
+ShowCounter.propTypes = {
+    number : PropTypes.number.isRequired
 }
